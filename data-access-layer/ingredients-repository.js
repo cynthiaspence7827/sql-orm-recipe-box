@@ -4,7 +4,7 @@ let moduleError;
 
 try {
   const db = require('../models');
-  ({ Ingredient } = db);
+  ({ ingredients:Ingredient } = db);
   if (Ingredient === undefined) {
     moduleError = 'It looks like you need to generate the Ingredient model.';
   }
@@ -21,9 +21,11 @@ try {
 
 
 async function createNewIngredient(amount, recipeId, measurementUnitId, foodStuff) {
+
   // Use the create method of the Ingredient object to create a new object.
   //
   // Docs: https://sequelize.org/v5/manual/instances.html#creating-persistent-instances
+  return await Ingredient.create({amount: amount, recipeId: recipeId, measurementUnitId: measurementUnitId, foodStuff: foodStuff})
 }
 
 

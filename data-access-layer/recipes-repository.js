@@ -34,6 +34,10 @@ async function getTenNewestRecipes() {
   // });
   //
   // Docs: https://sequelize.org/master/class/lib/model.js~Model.html#static-method-findAll
+  return await recipe.findAll({
+      limit: 10,
+      order: [["updatedAt", "DESC"]]
+  })
 }
 
 async function getRecipeById(id) {
