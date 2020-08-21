@@ -12,7 +12,7 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-   return queryInterface.bulkInsert('recipes', [
+   return queryInterface.bulkInsert('Recipes', [
     { title: "One-Pan Rotini with Tomato Cream Sauce", createdAt: new Date('2014-09-03'), updatedAt: new Date('2014-09-03') },
     { title: "Peanut Butter and Jelly Sandwich", createdAt: new Date('2014-11-27'), updatedAt: new Date('2014-11-27') },
     { title: "Smoked mackerel & leek hash with horseradish", createdAt: new Date('2016-06-07'), updatedAt: new Date('2016-06-07') },

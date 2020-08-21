@@ -13,7 +13,7 @@ module.exports = {
       }], {});
 
     */
-   return queryInterface.bulkInsert('instructions', [
+   return queryInterface.bulkInsert('Instructions', [
     { recipeId: 12, listOrder: 1, specification: 'Heat 1 tsp flavourless oil in a frying pan over a medium heat. Add the curry paste and cook for 1 min. Pour in the coconut milk, then leave to bubble away for a few mins before adding the prawns and courgetti. Cook for 1 min more to warm through, then divide between bowls.', createdAt: new Date(), updatedAt: new Date() },
     { recipeId: 11, listOrder: 1, specification: 'Peel and quarter the potatoes, then cook in a large pan of salted, boiling water for 15 mins. Drain and set aside.', createdAt: new Date(), updatedAt: new Date() },
     { recipeId: 11, listOrder: 2, specification: 'Pour a glug of olive oil into a large frying pan over a medium heat and cook the sausages for 15 mins. Add the tomatoes to the pan for the final 5 mins. Mash the potatoes well and mix in the pesto. Season and serve with the sausages and tomatoes.', createdAt: new Date(), updatedAt: new Date() },

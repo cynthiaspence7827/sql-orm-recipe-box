@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const instructions = sequelize.define('instructions', {
+  const instructions = sequelize.define('Instructions', {
     specification: DataTypes.TEXT,
     listOrder: DataTypes.INTEGER,
     recipeId: DataTypes.INTEGER
